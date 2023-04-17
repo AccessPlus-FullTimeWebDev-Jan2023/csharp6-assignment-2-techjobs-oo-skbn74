@@ -1,13 +1,19 @@
-﻿using System;
+﻿ using System;
+using System.Net.Http.Headers;
+
 namespace TechJobsOOAutoGraded6
 {
-	public class Employer
+	public class Employer :JobField
 	{
-        public int Id { get; }
+      public Employer(string value) : base(value)
+        {
+        }
+        /* public int Id { get; }
         private static int nextId = 1;
         public string Value { get; set; }
 
-        public Employer()
+
+       public Employer()
         {
             Id = nextId;
             nextId++;
@@ -32,7 +38,7 @@ namespace TechJobsOOAutoGraded6
         public override string ToString()
         {
             return Value;
-        }
+        }*/
     }
 }
 
